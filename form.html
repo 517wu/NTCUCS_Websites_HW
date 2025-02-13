@@ -1,24 +1,75 @@
 <!DOCTYPE HTML>
 <html>
+<head>
+<style>
+body{
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
 <h1>表單填寫</h1>
 <form>
-<label for="name"><b>姓名：</b></label>
+<label for="name">姓名：</label>
 <input type="text" id="name" name="name" placeholder="輸入姓名">
 <br>
-<label for="name"><b>密碼：</b></label>
+<label for="name">密碼：</label>
 <input type="password" id="passwd" name="passwd" placeholder="輸入密碼">
 <br>
-<label for="birthday"><b>生日：</b></label>
+<label for="birthday">生日：</label>
 <input type="date" id="birthday" name="birthday">
 <br>
-<p><b>請選擇性別：<b></p>
+<p>請選擇性別：</p>
 <input type="radio" id="male" name="gender" value="Male">
-<label for="name"><b>男</b></label>
+<label for="name">男</label>
 <br>
 <input type="radio" id="female" name="gender" value="Female">
-<label for="name"><b>女</b></label>
-<p><b>選擇擅長程式語言：</b></p>
-<input type="checkbox" id="HTML" name="program_language" value="html"
-
+<label for="name">女</label>
+<p>選擇擅長程式語言：</p>
+<input type="checkbox" id="language1" name="language1" value="HTML">
+<label for="language1">HTML</label>
+<br>
+<input type="checkbox" id="language2" name="language2" value="CSS">
+<label for="language2">CSS</label>
+<br>
+<input type="checkbox" id="language3" name="language3" value="JavaScript">
+<label for="language3">JavaScript</label>
+<br>
+<input type="checkbox" id="language4" name="language4" value="C/C++">
+<label for="language4">C/C++</label>
+<br>
+<input type="checkbox" id="language5" name="language5" value="Java">
+<label for="language5">Java</label>
+<br>
+<input type="checkbox" id="language6" name="language6" value="Python">
+<label for="language6">Python</label>
+<br>
+<p></p>
+<label for="grade">就讀年級：</label>
+<select id="grades" name="grades">
+<optgroup label="大學">
+<option value="A1">大一</option>
+<option value="A2">大二</option>
+<option value="A3">大三</option>
+<option value="A4">大四</option>
+</optgroup>
+<optgroup label="碩士">
+<option value="B1">碩一</option>
+<option value="B2">碩二</option>
+</optgroup>
+</select>
+<br>
+<label for="email">Email：</label>
+<input type="email" id="email" name="email" placeholder="輸入 Email">
+<br>
+<p>備註：</p>
+<textarea name="notes" rows="3" cols="25" placeholder="輸入備註"></textarea>
+<br>
+<p></p>
+<label for="profilePic">上傳頭像圖片：</label>
+<input type="file" id="profilePic" name="profilePic">
+<br>
+<input type="submit" value="Submit">
 </form>
+</body>
 </html>
