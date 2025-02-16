@@ -5,15 +5,15 @@ background-color: #D1D0A3;
 div.title{
     margin:auto;
     /* border: 1px solid #777; */
-    padding-right:20px;
-    padding-left:20px;
+    padding-right:25px;
+    padding-left:25px;
     width:fit-content;
-    background:#AAA694;
+    background:linear-gradient(to right,#D1D0A3 0% ,#AAA694 15% 85%,#D1D0A3);
 }
 
 h1{
     text-align: center;
-    color: #f5f4ee;
+    color: #fbfbf9;
     font-size: 50px;
 }
 div.information{
@@ -63,9 +63,12 @@ div.text p{
 }
 
 div.introduction{
-    border: #504826 solid 5px;
+    border: #504826 groove 5px;
     float:left;
     width: fit-content;
     max-width: 600px;
+    min-width: 100px;
     padding: 10px;
+    background-color: #8b795d;
+    color: #f5f4ee;
 }
