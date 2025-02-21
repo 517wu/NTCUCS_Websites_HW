@@ -1,33 +1,41 @@
 body{
-background-color: #D1D0A3;
+background-color: #5E548E;
 }
 
 div.title{
     margin:auto;
     /* border: 1px solid #777; */
-    padding-right:25px;
-    padding-left:25px;
+    padding-right:30px;
+    padding-left:30px;
     width:fit-content;
-    background:linear-gradient(to right,#D1D0A3 0% ,#AAA694 15% 85%,#D1D0A3);
+    background:linear-gradient(to right,#5E548E 0% ,#9F86C0 15% 85%,#5E548E);
 }
 
 h1{
     text-align: center;
-    color: #fbfbf9;
-    font-size: 50px;
+    color: #231942;
+    font-size: 60px;
 }
 div.information{
     width: 100%;
     height: 100%;
     /* border:1px solid; */
     display: flex;
+    flex-direction: column;
+}
+div.card{
+    width: 100%;
+    /* border:1px solid; */
+    margin-bottom: 50px;
+    display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
     
 }
 div.basicInformation{
     /* border: 1px solid #777; */
-    float: left;
-    margin-right:50px ;
+    width:300px;
+    margin-right :30px;
 }
 
 div.photo{ 
@@ -39,9 +47,9 @@ div.photo{
 }
 
 img{
-    float:left;
     height:100%;
     object-fit: contain;
+    border-radius: 15px;
 }
 
 div.text{
@@ -52,7 +60,7 @@ div.text{
 div.text p{
     margin: 0px;
     margin-left: 20px;
-    color: #453823;
+    color: #231942;
     width: fit-content;
     font-size: large;
     font-weight: bold;
@@ -63,12 +71,17 @@ div.text p{
 }
 
 div.introduction{
-    border: #504826 groove 5px;
-    float:left;
+    /* border: #504826 groove 5px; */
     width: fit-content;
-    max-width: 600px;
+    width: 600px;
     min-width: 100px;
-    padding: 10px;
-    background-color: #8b795d;
-    color: #f5f4ee;
+    padding: 20px;
+    background-color: #5E548E;
+    color: #5E548E;
+    border-radius: 20px;
+}
+
+.basicInformation:hover~.introduction{ 
+    background-color: #BE95C4;
+    color: #231942;
 }
