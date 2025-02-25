@@ -6,6 +6,15 @@ body{
 p{
     font-weight: 600;
 }
+.title-base{
+    background-color: white;
+    width: 100%;
+    height: 138px;
+    margin-top: 15px;
+    position: absolute;
+    z-index: -10;
+    
+}
 .title-bar{
     background-color: #59b1d4;
     height: 10px;
@@ -17,6 +26,7 @@ p{
     margin-top: 8px;
     position: relative;
     font-weight: 500;
+    clip-path: polygon(0px 0px, 72% 0px, 60% 85px, 0px 100px);
 }
 .title-link{
     color:#f3e8b2;
@@ -58,21 +68,56 @@ p, a{
     margin: 0px -8px 0px 10px;
     /* border: 1px solid; */
 }
-
-nav{
+.language-and-icons{
     user-select: none;
-    display: relate;
+}
+.language{
+    font-size: 16px;
+    color: #58829A;
+    cursor: default;
+    display: none;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 8px;
+}
+.icons-img{
+    width: 45px;
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.login-style{
+    width: 75px;
+    height: 40px;
+    background-color: rgb(78, 157, 189);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-base{
+    user-select: none;
     position: relative;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* background-color: white; */
     /* border: 1px solid; */
 }
 .nav-block{
     position: relative;
     display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
+    justify-content:space-evenly;
+    gap: 10px;
     align-items: center;
-    width: 100%;
+    width: 1300px;
     font-size:22px;
     color: #87543E;
     white-space: nowrap;
@@ -107,6 +152,10 @@ nav{
     width: 20px;
     height: 15px;
 }
+.main-content{
+    min-height: 46.9vh;
+    padding: 0px 30px;
+}
 .download-tag{
     display: block;
     width: 264px;
@@ -116,10 +165,6 @@ nav{
 .tag-text{
     fill: white;
     font-size: 30px;
-}
-.main-content{
-    min-height: 46.9vh;
-    padding: 0px 30px;
 }
 .content-block{
     max-width: 1100px;
