@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    height: 100%;
+}
+.loader{
+    display: flex;
+    justify-content: center; /* 控制 `wrapper` 在父容器中的位置 */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.scene{
+    background-color: rgb(197, 254, 235);
+    height:180px;
+    width:1000px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    border: 10px solid rgb(177, 235, 246);
+}
+
+.rabbit_and_boat{
+    width:300px;
+    height:160px;
+    position: relative;
+    animation:move 8s infinite linear; 
+}
+.rabbit > img{
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:15%;
+    left: 40%;
+    animation:rotate-rabbit 1.5s infinite ease; 
+    transform-origin: 10% 90%;
+}
+.boat{
+    position: absolute;
+    top:10px;
+    width: 180px;
+    height:160px;
+    background:linear-gradient(to bottom,rgb(124, 105, 83) 60%,rgb(74, 60, 44));
+    clip-path: polygon(100% 60%, 100% 75%, 85% 95%, 50% 100%, 15% 95%, 0 75%, 0 60%);
+}
+.river{
+    /* position: relative; */
+    top:20px;
+    
+}
+.wave{
+    position: absolute;
+    top:80px;
+    width: 200%;
+    animation: river-move 2s infinite linear alternate;
+}
+
+@keyframes rotate-rabbit {
+    0%, 50%,100%{
+        transform: rotate(20deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(-50deg);
+    }
+}
+@keyframes move {
+    0%{
+        transform: translateX(-250px);
+        top:0 ;
+    }
+    20%{
+        top: 10px;
+    }
+    40%{
+        top:0 ;
+    }
+    60%{
+        top:10px ;
+    }
+    80%{
+        top: 0px;
+    }
+    100%{
+        transform: translateX(1000px);
+        top:10px ;
+    }
+}
+@keyframes river-move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+    
+}

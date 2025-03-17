@@ -8,11 +8,10 @@ p{
 }
 .title-base{
     background-color: white;
-    width: 100%;
+    width: 100vw;
     height: 130px;
     margin-top: 15px;
     position: absolute;
-    z-index: -10;
     
 }
 .title-bar{
@@ -89,10 +88,7 @@ p, a{
 .icons-img{
     width: 45px;
 }
-img{
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
+
 .login-style{
     width: 75px;
     height: 40px;
@@ -103,7 +99,7 @@ img{
     line-height: 38px;
     font-size: 20px;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer; 
 }
 .nav-base{
     user-select: none;
@@ -155,7 +151,6 @@ img{
     height: 15px;
 }
 .main-content{
-    min-height: 46.9vh;
     padding: 0px 30px;
 }
 .download-tag{
@@ -299,4 +294,12 @@ img{
 }
 .cs-info p {
     font-weight: normal;
+}
+@media(min-width:768px) {
+    .cs-info{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+    
 }

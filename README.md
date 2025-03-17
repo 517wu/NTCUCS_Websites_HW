@@ -9,4 +9,7 @@
 * [download](https://517wu.github.io/NTCUCS_Websites_HW/download/download.html) ：系網靜態網頁
   ![image](https://github.com/user-attachments/assets/b1883268-50fe-4036-9d82-dafef4f13634)
 
+* [loading](https://517wu.github.io/NTCUCS_Websites_HW/loading/loading.html) :loading動畫(兔子搭船釣魚)
+  
+
 
