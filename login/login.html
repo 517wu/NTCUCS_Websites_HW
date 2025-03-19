@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="login_base">
         <div class="login">
-            <div class="title">表單填寫</div>
-            <div class="form">
-            <div class="input">
-                <div class="label">
-                    <label>姓名：</label>
-                </div>
+            <h1>Login</h1>
+            <div class="name-and-passwd">
+              <div class="name">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" placeholder="輸入姓名">
+              </div>
+              <div class="passwd">
+                <label for="passwd">密碼：</label>
+                <input type="password" id="passwd" name="passwd" placeholder="輸入密碼">
+              </div>
             </div>
-            <input type="text" class="login-name" id="name" placeholder="輸入姓名">
-            <label for="passwd">密碼：</label>
-            <input type="password" id="passwd" name="passwd" placeholder="輸入密碼">
-            <input type="submit" value="Submit">
-            </div> 
+            <div class="submit">
+              <input type="submit" value="Submit">
+            </div>
         </div>
     </div>
 </body>    
