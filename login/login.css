@@ -84,3 +84,10 @@ button{
   width:100px;
 }
 
+#captchaCanvas{
+  border-radius: 20px;
+  width:fit-content;
+  height:30px;
+  padding:2px;
+  border: 2px solid rgb(255, 232, 140);
+}
