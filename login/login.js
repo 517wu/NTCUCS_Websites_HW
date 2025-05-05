@@ -47,8 +47,8 @@ function generateCaptcha(){
   const ctx = canvas.getContext("2d");
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "rgb(208, 232, 255)"; 
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "rgb(208, 232, 255)"; //設定背景顏色
+  ctx.fillRect(0, 0, canvas.width, canvas.height);//填入顏色
   captchaText = Math.random().toString(36).substring(2, 6).toUpperCase();
   ctx.font = "80px  Arial";
   ctx.fillStyle = "rgb(27, 91, 151)"; 
